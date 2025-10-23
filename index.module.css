@@ -1,54 +1,87 @@
-.appItem {
+
+.appContainer {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #f6dcd1, #9dd8f4);
+  min-height: 100vh;
+}
+
+.appStore {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-type: none;
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding-top: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-  width: 30%;
-  max-width: 128px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 5px 8px 12px rgba(25, 159, 242, 0.2);
-  }
+  width: 80%;
+  max-width: 1110px;
 }
 
-@media screen and (min-width: 768px) {
-  .appItem {
-    max-width: 198px;
-    padding-top: 24px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-.appImage {
-  width: 50px;
-  height: 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .appImage {
-    width: 90px;
-    height: 90px;
-  }
-}
-
-.appName {
+.heading {
   color: #1e293b;
-  font-family: "Bree Serif";
-  font-size: 16px;
+  font-family: 'Bree Serif';
+  font-size: 40px;
+  /* margin-top: 0px; */
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .appName {
-    font-family: "Bree Serif";
-    font-size: 24px;
+  .heading {
+    font-size: 48px;
+    margin-top: 56px;
   }
+}
+
+.searchInputContainer{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: transparent;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 4px;
+  border: 1px solid #04294f;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .searchInputContainer {
+    max-width: 480px;
+  }
+}
+
+.searchInput {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex-grow: 1;
+}
+
+.searchIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.tabsList {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 0px;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .tabsList {
+    margin-top: 48px;
+  }
+}
+
+.appsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0px;
 }
