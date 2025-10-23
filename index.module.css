@@ -1,0 +1,54 @@
+.appItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-top: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 30%;
+  max-width: 128px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 8px 12px rgba(25, 159, 242, 0.2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .appItem {
+    max-width: 198px;
+    padding-top: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.appImage {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .appImage {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.appName {
+  color: #1e293b;
+  font-family: "Bree Serif";
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .appName {
+    font-family: "Bree Serif";
+    font-size: 24px;
+  }
+}
